@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Subtracting header and footer height */
+    background-color: #f4f4f4; /* Background color for the main content */
+    background-image: url('nw.jpg'); /* Add the path to your network symbol image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure the image covers the entire background */
+}
+
+#status {
+    text-align: center;
+}
+
+#state {
+    font-size: 2.5rem;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+#state:hover {
+    transform: scale(1.05);
+}
+
+.ONLINE {
+    background-color: #5cb85c;
+}
+
+.ONLINE::after {
+    content: " 🌐"; /* Emoji for online status */
+}
+
+.OFFLINE {
+    background-color: #d9534f;
+}
+
+.OFFLINE::after {
+    content: " ⚠️"; /* Emoji for offline status */
+}
+
+.provider-info-container {
+    margin-top: 20px;
+}
+
+.provider-info {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.provider-info p {
+    margin: 0;
+}
+
+.provider-info .provider-name {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
